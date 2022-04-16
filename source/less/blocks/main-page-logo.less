@@ -8,18 +8,45 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #81b3d2;
+  outline: 5px solid rgba(14, 156, 47, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-page-logo {
+    width: 768px;
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-page-logo {
+    width: 1200px;
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .primary-welcome {
+  margin: 0;
   padding: 84px 19px 30px 19px;
   display: block;
   align-self: center;
 }
 
-.main-page-logo::after {
-  content: "";
-  display: block;
-  background-image: url("../img/intro-triangle.svg");
-  width: 320px;
-  height: 57px;
+@media (min-width: @tablet-width) {
+  .primary-welcome {
+    padding: 77px 154px 34px 153px;
+    display: block;
+    align-self: center;
+  }
 }
+
+// .main-page-logo::after {
+//   content: "";
+//   display: block;
+//   background-image: url("../img/intro-triangle.svg");
+//   width: 320px;
+//   height: 57px;
+// }
