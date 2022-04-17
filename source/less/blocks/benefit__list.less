@@ -3,6 +3,20 @@
   margin: 0;
   list-style-type: none;
   width: 320px;
+  outline: 5px solid rgba(234, 6, 6, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .benefit__list {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefit__list {
+    width: 1200px;
+  }
 }
 
 .benefit__item {
@@ -15,6 +29,20 @@
   background-color: #ffffff;
 }
 
+// @media (min-width: @tablet-width) {
+//   .benefit__item {
+//     max-width: 256px;
+//     max-height: 256px;
+//   }
+// }
+
+// @media (min-width: @desktop-width) {
+//   .benefit__item {
+//     max-width: 400px;
+//     max-height: 256px;
+//   }
+// }
+
 .benefit__item--visual {
   padding-top: 33px;
   font-weight: 700;
@@ -24,20 +52,74 @@
   background-color: #81b3d2;
 }
 
+// @media (min-width: @tablet-width) {
+//   .benefit__item--visual {
+//     padding: 0;
+//     width: 768px;
+//     height: 260px;
+//   }
+// }
+
+// @media (min-width: @desktop-width) {
+//   .benefit__item--visual {
+//     padding: 0;
+//     width: 1200px;
+//     height: 260px;
+//   }
+// }
+
 .benefit__item--text {
   padding: 24px 26px 24px 26px;
   color: #333333;
   background-color: #d6d6d650;
+  outline: 5px solid rgba(213, 231, 14, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .benefit__item--text {
+    display: flex;
+    padding: 0;
+    max-width: 256px;
+    max-height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefit__item--text {
+    display: flex;
+    padding: 0;
+    max-width: 400px;
+    max-height: 256px;
+  }
 }
 
 .benefit__list--simple--list {
-  display: flex;
-  flex-direction: column;
   padding-top: 23px;
   padding-bottom: 30px;
   color: #333333;
   background-color: #ffffff;
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .benefit__list--simple--list {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 768px;
+    max-height: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefit__list--simple--list {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    max-height: 330px;
+  }
 }
 
 .benefit__item--house::before {
@@ -89,6 +171,18 @@
   margin-left: 47px;
 }
 
+@media (min-width: @tablet-width) {
+  .benefit__title-2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefit__title-2 {
+    text-align: center;
+  }
+}
+
 .benefit-title {
   margin: 0;
   padding-bottom: 15px;
@@ -126,4 +220,16 @@
   padding-bottom: 22px;
   text-align: left;
   margin-left: 47px;
+}
+
+@media (min-width: @tablet-width) {
+  .benefit__description-2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .benefit__description-2 {
+    text-align: center;
+  }
 }
